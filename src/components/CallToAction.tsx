@@ -201,14 +201,14 @@ function RingCard({
 }) {
   const { cx, cy, rx, ry, card, table } = geo;
   const theta = useTransform(phase, (p) => thetaAt(table, slot + p / 360));
-  const x = useTransform(theta, (t) => cx + rx * Math.sin(t) - card / 2);
-  const y = useTransform(theta, (t) => cy - ry * Math.cos(t) - (card * 10) / 32);
-  const rotate = useTransform(theta, (t) => (Math.atan2(ry * Math.sin(t), rx * Math.cos(t)) * 180) / Math.PI);
+  const x = useTransform(theta, (t) => Math.round(cx + rx * Math.sin(t) - card / 2));
+  const y = useTransform(theta, (t) => Math.round(cy - ry * Math.cos(t) - (card * 10) / 32));
+  const rotate = useTransform(theta, (t) => Math.round((Math.atan2(ry * Math.sin(t), rx * Math.cos(t)) * 1800) / Math.PI) / 10);
   const opacity = useTransform(theta, (t) => {
     const deg = Math.abs(((((t * 180) / Math.PI) % 360) + 540) % 360 - 180); // 0 = top
     if (deg <= 112) return 1;
     if (deg >= 132) return 0;
-    return 1 - (deg - 112) / 20;
+    return Math.round((1 - (deg - 112) / 20) * 100) / 100;
   });
   return (
     <motion.div className="absolute top-0 left-0" style={{ x, y, rotate, opacity, width: card }}>
