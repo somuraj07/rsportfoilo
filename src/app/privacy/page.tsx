@@ -5,7 +5,7 @@ import { DataRequestForm } from "@/components/DataRequestForm";
 
 export const metadata: Metadata = {
   title: "Privacy policy",
-  description: "What personal data RS Digital collects on this website, why, who it is shared with, and how to access or delete it.",
+  description: "What personal data RS Digitech collects on this website, why, who it is shared with, and how to access or delete it.",
 };
 
 /*
@@ -16,7 +16,7 @@ export default function PrivacyPage() {
   return (
     <LegalPage
       title="Privacy policy"
-      intro="This policy explains what personal data RS Digital collects through this website, why we collect it, who we share it with and the choices you have. We collect as little as we can."
+      intro="This policy explains what personal data RS Digitech collects through this website, why we collect it, who we share it with and the choices you have. We collect as little as we can."
     >
       <h2>What we collect</h2>
       <h3>When you book a call</h3>

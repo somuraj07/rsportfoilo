@@ -22,7 +22,7 @@ export function visitorFooter(from: string, reason: string) {
     You are receiving this because ${esc(reason)}. We only email you about this request.
     To stop receiving emails from us, <a href="${unsub}" style="color:#566174">unsubscribe</a>.
     ${site ? `Read our <a href="${site}/privacy" style="color:#566174">privacy policy</a>.` : ""}
-    <br />RS Digital
+    <br />RS Digitech
   </p>`;
 }
 

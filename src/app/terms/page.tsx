@@ -4,7 +4,7 @@ import { ContactBlock, LegalPage } from "@/components/Legal";
 
 export const metadata: Metadata = {
   title: "Terms of service",
-  description: "The terms for using the RS Digital website and how projects and ERP subscriptions are agreed.",
+  description: "The terms for using the RS Digitech website and how projects and ERP subscriptions are agreed.",
 };
 
 /* REVIEW with your legal adviser before launch, especially governing law and liability. */
@@ -16,7 +16,7 @@ export default function TermsPage() {
     >
       <h2>About this website</h2>
       <p>
-        This website describes the websites, apps and ERP products RS Digital builds and offers. Its content is general
+        This website describes the websites, apps and ERP products RS Digitech builds and offers. Its content is general
         information, not a binding offer. Features, availability and prices are confirmed only in a written proposal or
         agreement.
       </p>
@@ -49,7 +49,7 @@ export default function TermsPage() {
 
       <h2>Intellectual property</h2>
       <p>
-        The RS Digital name, logo, text and design of this website belong to RS Digital. Screenshots of client work
+        The RS Digitech name, logo, text and design of this website belong to RS Digitech. Screenshots of client work
         remain subject to their owners&apos; rights. Fonts are used under their open
         licences.
       </p>

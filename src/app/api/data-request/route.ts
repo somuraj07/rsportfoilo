@@ -34,7 +34,7 @@ export async function POST(req: Request) {
   try {
     await Promise.all([
       mailer.transporter.sendMail({
-        from: `"RS Digital website" <${mailer.from}>`,
+        from: `"RS Digitech website" <${mailer.from}>`,
         to: mailer.notify,
         replyTo: email,
         subject: `Privacy request: ${types[type]} (${email})`,
@@ -45,7 +45,7 @@ export async function POST(req: Request) {
           <p>Verify the requester owns this email before acting. Reply within 30 days.</p></div>`,
       }),
       mailer.transporter.sendMail({
-        from: `"RS Digital" <${mailer.from}>`,
+        from: `"RS Digitech" <${mailer.from}>`,
         to: email,
         subject: "We received your privacy request",
         ...unsubscribeHeaders(mailer.from),
@@ -53,8 +53,8 @@ export async function POST(req: Request) {
           <p>Hello,</p>
           <p>We received your request: <b>${esc(types[type])}</b>.</p>
           <p>We may reply to this email to confirm it is you, and we aim to complete your request within 30 days.</p>
-          <p>Team RS Digital</p>
-          ${visitorFooter(mailer.from, "you sent a privacy request on the RS Digital website")}</div>`,
+          <p>Team RS Digitech</p>
+          ${visitorFooter(mailer.from, "you sent a privacy request on the RS Digitech website")}</div>`,
       }),
     ]);
   } catch (err) {

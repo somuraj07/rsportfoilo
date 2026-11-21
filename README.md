@@ -1,4 +1,4 @@
-# RS Digital website
+# RS Digitech website
 
 Next.js 16 (App Router) · Tailwind CSS v4 · Framer Motion · Claude API · Nodemailer
 

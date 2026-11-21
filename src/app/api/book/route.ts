@@ -82,7 +82,7 @@ export async function POST(req: Request) {
   try {
     await Promise.all([
       transporter.sendMail({
-        from: `"RS Digital website" <${GMAIL_USER}>`,
+        from: `"RS Digitech website" <${GMAIL_USER}>`,
         to: notify,
         replyTo: b.email,
         subject: `New call booked: ${b.name} · ${interest} · ${when}`,
@@ -90,17 +90,17 @@ export async function POST(req: Request) {
           <p style="font-family:sans-serif;font-size:12px;color:#566174">Consent to be contacted about this call given at ${consentAt}. The visitor confirmed they are 18 or older.</p>`,
       }),
       transporter.sendMail({
-        from: `"RS Digital" <${GMAIL_USER}>`,
+        from: `"RS Digitech" <${GMAIL_USER}>`,
         to: b.email,
-        subject: `Your call with RS Digital is booked for ${when}`,
+        subject: `Your call with RS Digitech is booked for ${when}`,
         ...unsubscribeHeaders(GMAIL_USER),
         html: `<div style="font-family:sans-serif;font-size:15px;line-height:1.6;color:#0e1a2b">
           <p>Hi ${esc(b.name)},</p>
-          <p>Thanks for booking a call with RS Digital. Here are the details:</p>
+          <p>Thanks for booking a call with RS Digitech. Here are the details:</p>
           <table style="font-size:14px">${table}</table>
           <p>We will call you on <b>${esc(b.phone)}</b> at the chosen time. If you need to change it, just reply to this email.</p>
-          <p>Team RS Digital</p>
-          ${visitorFooter(GMAIL_USER, "you booked a call on the RS Digital website")}</div>`,
+          <p>Team RS Digitech</p>
+          ${visitorFooter(GMAIL_USER, "you booked a call on the RS Digitech website")}</div>`,
       }),
     ]);
   } catch (err) {

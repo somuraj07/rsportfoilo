@@ -12,9 +12,9 @@ export function Footer() {
       <div className="wrap py-16 md:py-20">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
-            <span className="flex items-center gap-4" aria-label="RS Digital" role="img">
+            <span className="flex items-center gap-4" aria-label="RS Digitech" role="img">
               <Image src="/brand/mark-white.png" alt="" width={1266} height={555} className="h-12 w-auto" />
-              <span className="font-display text-[22px] font-semibold tracking-[0.22em] uppercase">Digital</span>
+              <span className="font-display text-[22px] font-semibold tracking-[0.22em] uppercase">Digitech</span>
             </span>
             <p className="mt-6 max-w-sm text-[15px] leading-relaxed text-bone/70">
               Websites, mobile apps and ready-made ERP software on subscription.
@@ -27,7 +27,7 @@ export function Footer() {
               )}
               {site.whatsapp && (
                 <a
-                  href={whatsappLink("Hi RS Digital, I have a question.")}
+                  href={whatsappLink("Hi RS Digitech, I have a question.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex min-h-10 items-center transition-colors hover:text-signal"
@@ -53,7 +53,7 @@ export function Footer() {
         <Image src="/brand/mark-white.png" alt="" aria-hidden width={1266} height={555} className="mt-20 h-auto w-full max-w-[720px] opacity-[0.06]" />
         <div className="mt-8 flex flex-col gap-4 border-t border-line-dark pt-6 text-[14px] text-bone/70 lg:flex-row lg:items-center lg:justify-between">
           <span>
-            © <Year /> RS Digital{site.city ? ` · ${site.city}` : ""}
+            © <Year /> RS Digitech{site.city ? ` · ${site.city}` : ""}
           </span>
           <nav aria-label="Legal">
             <ul className="flex flex-wrap items-center gap-x-6 gap-y-1">

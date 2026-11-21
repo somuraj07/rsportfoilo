@@ -14,7 +14,7 @@ import { products } from "@/lib/data";
 
 /**
  * Pinned three-stage scroll moment.
- * 1. Two overlapping circles: Websites & apps | RS Digital | ERP products.
+ * 1. Two overlapping circles: Websites & apps | RS Digitech | ERP products.
  * 2. They pull apart, joined by a liquid neck (SVG goo filter).
  * 3. They shrink to end points on a dotted line, rings appear, and the services
  *    between the two sides pop in: dark pills near the centre, light ones outside.
@@ -157,7 +157,7 @@ export function Connect() {
                 <span className="absolute -translate-x-1/2 -translate-y-1/2 text-center leading-tight" style={{ left: CX, top: CY }}>
                   RS
                   <br />
-                  Digital
+                  Digitech
                 </span>
                 <span className="absolute -translate-x-1/2 -translate-y-1/2 text-center leading-tight" style={{ left: CX + 120, top: CY }}>
                   ERP
@@ -177,7 +177,7 @@ export function Connect() {
                 style={{ opacity: centreTop, top: 60, left: CX }}
                 className="absolute -translate-x-1/2 text-center text-[22px] leading-tight font-semibold"
               >
-                RS Digital
+                RS Digitech
               </motion.span>
 
               {/* pills */}

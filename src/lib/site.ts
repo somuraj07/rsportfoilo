@@ -4,7 +4,7 @@
  * Anything left empty is simply hidden on the site.
  */
 export const site = {
-  name: "RS Digital",
+  name: "RS Digitech",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   /** WhatsApp number in international format, digits only, e.g. 919876543210 */
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "",

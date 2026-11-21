@@ -82,7 +82,7 @@ export function BookCall() {
       const when = new Date(date + "T00:00:00").toLocaleDateString("en-IN", { weekday: "long", day: "numeric", month: "long" });
       setSummary({
         when: `${when}, ${slot}`,
-        wa: whatsappLink(`Hi RS Digital, I just booked a call for ${when} at ${slot}. My name is ${body.name}.`),
+        wa: whatsappLink(`Hi RS Digitech, I just booked a call for ${when} at ${slot}. My name is ${body.name}.`),
       });
       setState("done");
     } catch (err) {
@@ -126,7 +126,7 @@ export function BookCall() {
             <div className="mt-10 space-y-3">
               {site.whatsapp && (
                 <a
-                  href={whatsappLink("Hi RS Digital, I'd like to talk about a project.")}
+                  href={whatsappLink("Hi RS Digitech, I'd like to talk about a project.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex min-h-12 items-center gap-3 text-[16px]"
@@ -279,7 +279,7 @@ export function BookCall() {
                     className="mt-1 size-5 shrink-0 accent-[#2bd3a0]"
                   />
                   <span>
-                    I agree that RS Digital can use these details to arrange this call and contact me about it by email
+                    I agree that RS Digitech can use these details to arrange this call and contact me about it by email
                     and WhatsApp, as described in the{" "}
                     <Link href="/privacy" className="text-bone underline underline-offset-2">
                       privacy policy

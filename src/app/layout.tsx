@@ -16,17 +16,17 @@ const mono = JetBrains_Mono({ variable: "--font-mono-src", subsets: ["latin"], w
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "RS Digital — Websites, apps and ERP software for growing businesses",
-    template: "%s · RS Digital",
+    default: "RS Digitech — Websites, apps and ERP software for growing businesses",
+    template: "%s · RS Digitech",
   },
   description:
-    "RS Digital builds websites and mobile apps, and runs six ERP products on subscription: School, Healthcare, Coaching, Garage, Distribution and Restaurant ERP.",
+    "RS Digitech builds websites and mobile apps, and runs six ERP products on subscription: School, Healthcare, Coaching, Garage, Distribution and Restaurant ERP.",
   openGraph: {
-    title: "RS Digital — Websites, apps and ERP software",
+    title: "RS Digitech — Websites, apps and ERP software",
     description:
       "Custom websites and apps, plus ready-made ERP software for schools, hospitals, coaching centres, garages, distributors and restaurants.",
     type: "website",
-    siteName: "RS Digital",
+    siteName: "RS Digitech",
   },
 };
 

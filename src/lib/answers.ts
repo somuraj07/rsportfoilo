@@ -87,7 +87,7 @@ export function localAnswer(question: string): string {
   }
 
   if (!parts.length) {
-    return `RS Digital builds websites and mobile apps, and runs six ready-made ERP products on subscription:\n${products
+    return `RS Digitech builds websites and mobile apps, and runs six ready-made ERP products on subscription:\n${products
       .map((p) => `• ${p.name} for ${p.for.toLowerCase()}`)
       .join("\n")}\n\nAsk me about any of these. ${BOOK}`;
   }

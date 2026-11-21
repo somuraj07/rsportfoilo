@@ -3,7 +3,7 @@ import { ContactBlock, LegalPage } from "@/components/Legal";
 
 export const metadata: Metadata = {
   title: "Refund policy",
-  description: "How cancellations and refunds work for RS Digital ERP subscriptions and custom projects.",
+  description: "How cancellations and refunds work for RS Digitech ERP subscriptions and custom projects.",
 };
 
 /*

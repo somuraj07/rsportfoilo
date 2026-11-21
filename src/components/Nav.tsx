@@ -25,7 +25,7 @@ export function Logo({ light }: { light?: boolean }) {
         className="h-7 w-auto transition-transform duration-300 group-hover:scale-105"
       />
       <span className={`font-display text-[16px] font-semibold tracking-[0.18em] uppercase ${light ? "text-bone" : "text-ink"}`}>
-        Digital
+        Digitech
       </span>
     </span>
   );
@@ -54,7 +54,7 @@ export function Nav() {
       }`}
     >
       <div className="wrap flex h-[72px] items-center justify-between">
-        <Link href="/" aria-label="RS Digital home" className="group flex min-h-11 items-center" onClick={() => setOpen(false)}>
+        <Link href="/" aria-label="RS Digitech home" className="group flex min-h-11 items-center" onClick={() => setOpen(false)}>
           <Logo light={onDark} />
         </Link>
 

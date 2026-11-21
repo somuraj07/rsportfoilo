@@ -6,7 +6,7 @@ export function buildKnowledge(): string {
   const lines: string[] = [];
   lines.push(`# ${site.name}`);
   lines.push(
-    "RS Digital builds websites and apps, and offers ready-made ERP products on a multi-tenant subscription platform.",
+    "RS Digitech builds websites and apps, and offers ready-made ERP products on a multi-tenant subscription platform.",
   );
 
   lines.push("\n## Services");
@@ -43,7 +43,7 @@ export function buildKnowledge(): string {
   return lines.join("\n");
 }
 
-export const SYSTEM_PROMPT = `You are the assistant on the RS Digital website. You help visitors understand RS Digital' services and ERP products and guide them to book a call.
+export const SYSTEM_PROMPT = `You are the assistant on the RS Digitech website. You help visitors understand RS Digitech' services and ERP products and guide them to book a call.
 
 Rules:
 - Answer only from the knowledge base below. If something is not in it (prices, delivery times, exact integrations, client names beyond those listed), say you don't have that detail and suggest booking a call so the team can answer.

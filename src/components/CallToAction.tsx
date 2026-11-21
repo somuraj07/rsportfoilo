@@ -20,17 +20,17 @@ import { Arrow, Icon } from "./ui";
  */
 const shots = [
   { src: "/work/saathyaki-home.jpg", alt: "Saathyaki home page" },
-  { src: "/work/rs-school.jpg", alt: "RS Digital School ERP page" },
+  { src: "/work/rs-school.jpg", alt: "RS Digitech School ERP page" },
   { src: "/work/saathyaki-modes.jpg", alt: "Saathyaki video and chat section" },
-  { src: "/work/rs-products.jpg", alt: "RS Digital ERP products section" },
+  { src: "/work/rs-products.jpg", alt: "RS Digitech ERP products section" },
   { src: "/work/saathyaki-how.jpg", alt: "Saathyaki how it works section" },
-  { src: "/work/rs-hero.jpg", alt: "RS Digital home page" },
+  { src: "/work/rs-hero.jpg", alt: "RS Digitech home page" },
   { src: "/work/saathyaki-pricing.jpg", alt: "Saathyaki pricing section" },
-  { src: "/work/rs-restaurant.jpg", alt: "RS Digital Restaurant ERP page" },
+  { src: "/work/rs-restaurant.jpg", alt: "RS Digitech Restaurant ERP page" },
   { src: "/work/saathyaki-mentors.jpg", alt: "Saathyaki mentors section" },
-  { src: "/work/rs-services.jpg", alt: "RS Digital services section" },
+  { src: "/work/rs-services.jpg", alt: "RS Digitech services section" },
   { src: "/work/saathyaki-join.jpg", alt: "Saathyaki waitlist section" },
-  { src: "/work/rs-work.jpg", alt: "RS Digital work section" },
+  { src: "/work/rs-work.jpg", alt: "RS Digitech work section" },
 ];
 
 export function CallToAction() {

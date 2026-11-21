@@ -4,7 +4,7 @@ import { CookieSettingsButton } from "@/components/CookieBanner";
 
 export const metadata: Metadata = {
   title: "Cookie policy",
-  description: "RS Digital uses no tracking or advertising cookies. This page lists the small amount of browser storage the site does use.",
+  description: "RS Digitech uses no tracking or advertising cookies. This page lists the small amount of browser storage the site does use.",
 };
 
 export default function CookiesPage() {

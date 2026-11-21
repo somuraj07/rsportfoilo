@@ -15,7 +15,7 @@ const starters = [
 
 const greeting: Msg = {
   role: "assistant",
-  content: "Hi, I'm the RS Digital assistant. Ask me about our websites, apps or ERP products.",
+  content: "Hi, I'm the RS Digitech assistant. Ask me about our websites, apps or ERP products.",
 };
 
 export function ChatWidget() {
@@ -115,7 +115,7 @@ export function ChatWidget() {
           <motion.div
             id="rs-chat"
             role="dialog"
-            aria-label="RS Digital assistant"
+            aria-label="RS Digitech assistant"
             initial={{ opacity: 0, y: 16, scale: 0.97 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 16, scale: 0.97 }}
@@ -126,7 +126,7 @@ export function ChatWidget() {
             <div className="flex items-center gap-3 border-b border-line bg-ink px-5 py-4 text-bone">
               <span className="grid size-10 place-items-center rounded-[10px] bg-bone px-1.5"><Image src="/brand/mark-black.png" alt="" width={1266} height={555} className="h-auto w-full" /></span>
               <div>
-                <p className="text-[15px] font-medium">RS Digital assistant</p>
+                <p className="text-[15px] font-medium">RS Digitech assistant</p>
                 <p className="flex items-center gap-1.5 text-[12px] text-bone/60">
                   <span className="size-1.5 rounded-full bg-whatsapp" /> Answers from our product information
                 </p>

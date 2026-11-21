@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* RS Digital — flat colour only, no gradients anywhere.
+/* RS Digitech — flat colour only, no gradients anywhere.
    60-30-10: off-white bone (60, backgrounds) · navy ink (30, text, dark sections, frames) · mint signal (10, accent). */
 @theme {
   --color-bone: #f5f4f0;
