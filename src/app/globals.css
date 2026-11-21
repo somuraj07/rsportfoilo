@@ -1,26 +1,136 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* RS Digital — flat colour only, no gradients anywhere.
+   60-30-10: off-white bone (60, backgrounds) · navy ink (30, text, dark sections, frames) · mint signal (10, accent). */
+@theme {
+  --color-bone: #f5f4f0;
+  --color-paper: #ffffff;
+  --color-ink: #0e1a2b;
+  --color-ink-2: #16243a;
+  --color-ink-3: #24344d;
+  --color-muted: #566174;
+  --color-line: #d9dce1;
+  --color-line-dark: #2a3a52;
+  --color-signal: #2bd3a0;
+  --color-signal-ink: #0e7a5a;
+  --color-whatsapp: #25d366;
+  --color-night: #0a1422;
+  --color-night-2: #13223a;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-display: var(--font-display-src), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-body-src), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono-src), ui-monospace, monospace;
+  --font-serif: var(--font-serif-src), ui-serif, Georgia, serif;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-pulse-dot: pulse-dot 2.8s ease-in-out infinite;
+  --animate-twinkle: twinkle 4s ease-in-out infinite;
+  --animate-ping-slow: ping-slow 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+
+  @keyframes twinkle {
+    0%,
+    100% {
+      opacity: 0.25;
+    }
+    50% {
+      opacity: 0.9;
+    }
+  }
+  @keyframes ping-slow {
+    0% {
+      transform: scale(0.9);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1.35);
+      opacity: 0;
+    }
+  }
+
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes pulse-dot {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.35;
+    }
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bone);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scrollbar-color: #0e1a2b #e2e5e9;
+  caret-color: #0e1a2b;
+}
+input,
+textarea {
+  caret-color: #2bd3a0;
+}
+
+::selection {
+  background: var(--color-signal);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  /* two-tone ring: navy inner, mint outer, visible on light and dark sections */
+  outline: 3px solid var(--color-signal);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px var(--color-ink);
+  border-radius: 6px;
+}
+
+.wrap {
+  width: 100%;
+  min-width: 0;
+  max-width: 1320px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+@media (min-width: 768px) {
+  .wrap {
+    padding-inline: 40px;
+  }
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Grid items never grow past their track (stops wide tab rows widening the page on phones). */
+.grid > * {
+  min-width: 0;
 }
